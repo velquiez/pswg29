@@ -1,0 +1,60 @@
+header {
+    text-align: center;
+    background-color: #F4FCD9;
+    padding: 40px;
+}
+aside{
+    padding: 40px;
+}
+.navegador {
+    width: 100%;
+    height: 60px;
+    background-color: #080438da;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#menu {
+grid-column: 2/5;
+}
+.form_casillas{
+    font-variant: small-caps;
+}
+.container-inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+.carrusel-inicio {
+    grid-column: 2/5;
+    text-align: center;
+}
+.carousel-inner {
+    text-align: center;
+}
+footer {
+    color: #fff;
+    text-align: center;
+    background-color: #080438da;
+    padding: 15px;
+}
+#container {
+    padding: 20px;
+}
+#btn-menu{
+    color: rgb(172, 184, 194);
+}
+/* Responsive */
+@media screen and (max-width: 600px){
+    *{
+        font-size: 1rem;
+    }
+    #cajamenu{
+       background-color: dimgrey;
+        text-align: center;
+    }
+    main{
+        font-size: xx-small;
+    }
+    footer{
+        font-size: xx-small;
+    }
+}

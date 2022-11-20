@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <h1 class="titulo">ELECTRONIC SAS</h1>
+        </header>
+
+        <div class="navegador">
+            <nav id="menu" class="navbar nav navbar-expand-md nav-pills flex-column flex-sm-row">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div id="cajamenu" class="offcanvas-body">
+                            <ul id="menudepleg" class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <a id="btn-menu" class="flex-sm nav-link  mx-auto" href="index.html">Inicio</a>
+                                <a id="btn-menu" class="flex-sm nav-link mx-auto active" href="administrador.html">Administrador</a>
+                                <li class="nav-item dropdown justify-content-end">
+                                    <a id="btn-menu" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Inventario</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="registro-produc.html">Registro-Producto</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="actualizar-produc.html">Actualizar</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="elimina-produc.html">Eliminar</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="buscar-produc.html">Consultar</a></li>
+                                    </ul>
+                                </li>
+                                <a id="btn-menu" class="flex-sm nav-link mx-auto" aria-current="page"
+                                    href="utilidades.html">Utilidades</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </div>
+    </div>
+    <main class="row container-fluid m-5">
+        <br>
+        <h3>Bienvenido a la administración.</h3>
+        <h4>Dé click sobre la acción que desea realizar:</h4>
+        <br><br><br><br>
+            <div class="col-md-3">
+                <a class="btn btn-primary" href="php/crea_bd.php" role="button">Crear_Base_Datos</a>
+               <!--  <button type="submit" class="btn btn-primary btn-lg" href="php/crea_bd.php">Crear Base_Datos</button> -->
+            </div>
+
+            <div class="col-md-3">
+                <a class="btn btn-success" href="php/crea_tabla.php" role="button">Crear_Tabla_BD</a>
+               <!--  <button type="submit" class="btn btn-success btn-lg" href="php/crea_tabla.php">Crear tabla_BD</button> -->
+            </div>
+
+            <div class="col-md-3">
+                <a class="btn btn-info" href="php/reporte.php" role="button">Generar Reportes</a>
+              <!--   <button type="submit" class="btn btn-dark btn-lg" href="php/reporte.php">Generar_Reporte</button> -->
+            </div>
+           
+            <div class="col-md-3">
+                <a class="btn btn-dark" href="php/backup.php" role="button">Crear Backup</a>
+              <!--   <button type="submit" class="btn btn-info btn-lg" href="php/backup.php">Generar_Backup</button> -->
+            </div>
+    </main>
+    <br>
+    <footer>
+        <p>
+            <strong>
+                
+                Sitio Web diseñado por: Curso Programación sitios Web - UNAD<br>
+                Grupo - 301127_29 
+            </strong>
+        </p>
+    </footer>
+
+        <!--Enlace de JS Bootstrap-->
+        <script src = "javasript/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
